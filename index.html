@@ -1134,7 +1134,7 @@ window.addEventListener('load', function(e) {
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: '<%= page.date %>', // 可选。默认为 location.href  比如我本人的就删除了
+  id: window.location.pathname, // 可选。默认为 location.href  比如我本人的就删除了
   owner: '123xiao',              //比如我的叫anTtutu
   repo: '123xiao.github.io',                 //比如我的叫anTtutu.github.io
   oauth: {
